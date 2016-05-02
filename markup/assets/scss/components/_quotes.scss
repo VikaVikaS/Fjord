@@ -1,0 +1,40 @@
+.quotes{
+	background: $gray-base;
+	padding:50px 0;
+	overflow:hidden;
+	&-item{
+		float: left;
+		width: 798px;
+		padding:86px 125px 68px;
+		margin:0 12px;
+		background: #fff;
+		font-size: 42px;
+		line-height: 50px;
+		font-family: 'montserrathairline';
+		position: relative;
+		margin: 0 41px 0 0;
+		&:first-child{
+			margin: 0 43px 0px -44%;
+		}
+		&:last-child{
+			margin: 0 -40% 0 0px;
+		}
+	}
+	/*& .owl-carousel{
+		& .item{
+			width: 798px;
+			padding:86px 125px 68px;
+			margin:0 12px;
+			background: #fff;
+			font-size: 42px;
+			line-height: 50px;
+			font-family: 'montserrathairline';
+			position: relative;
+		}
+		& .owl-item{
+			width: 798px !important;
+			margin-left:0;
+				/*&:first-child{
+					margin:0 0 0 -400px;
+				}*/
+}

@@ -1,0 +1,119 @@
+.footer-wrapper{
+	background: $gray-base;
+	position: relative;
+	&-holder{
+		position: relative;
+		z-index: 0;
+	}
+	& p{
+		position: absolute;
+		right:4vw;
+		top:-5vw;
+		max-width: 960px;
+		text-align:right;
+		font-size: 7vw;
+		line-height: 8vw;
+		font-family: 'montserratblack';
+		color:$brand-color-secondary;
+		text-transform: uppercase;
+	}
+}
+.footer{
+	position: absolute;
+	background: $brand-color-secondary;
+	padding:41px 53px 50px;
+	left:14%;
+	right:14%;
+	bottom:14%;
+	max-width:960px;
+	overflow: hidden;
+	@media only screen and (max-width: 960px){
+		bottom:0;
+		left:0;
+		right: 0;
+		padding:15px;
+		width: auto;
+		text-align:center;
+	}
+}
+.logo-block{
+	float:left;
+}
+.footer-links{
+	float:left;
+	list-style:none;
+	padding:0 45px;
+	font-size:12px;
+	line-height:18px;
+	text-transform:uppercase;
+	color:#fff;
+	text-align:left;
+	@media only screen and (max-width: 767px){
+		padding:0 10px;
+		margin: 0 0 20px;
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	& li{
+		padding:16px 0;
+		@media only screen and (max-width: 767px){
+			padding:8px 0;
+		}
+		&:first-child{
+			padding:0 0 16px;
+			@media only screen and (max-width: 767px){
+				padding:0 0 8px;
+			}
+		}
+		& a{
+			color:#fff;
+		}
+	}
+}
+.align-right{
+	float:right;
+	text-align:right;
+	@media only screen and (max-width: 960px){
+		text-align: center;
+		float: none;
+		display: inline-block;
+	}
+	& .copyright{
+		& span{
+			display: block;
+			text-transform: uppercase;
+			font-size: 11px;
+			line-height: 14px;
+			margin: 0 0 12px;
+		}
+		margin:0 0 100px;
+		@media only screen and (max-width: 960px){
+			margin:0 0 30px;
+		}
+	}
+	& .copy-link{
+		display: block;
+		color:rgba(255,255,255,0.2);
+		font-size: 12px;
+		line-height: 15px;
+		margin:0 0 30px;
+	}
+}
+.socialnetwork{
+	list-style:none;
+	& li{
+		display: inline-block;
+		padding: 0 17px;
+		&:last-child{
+			padding:0 0 0 17px;
+		}
+		& a{
+			font-size: 24px;
+			color: rgba(255,255,255,0.2);
+			&:hover{
+				color: rgba(255,255,255,0.4);
+			}
+		}
+	}
+}

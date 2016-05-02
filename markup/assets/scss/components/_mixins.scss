@@ -1,0 +1,27 @@
+@mixin buttons($vertical-padding, $horizontal-padding){
+	padding:$vertical-padding $horizontal-padding;
+	font-size:$btn-font-size;
+	line-height:$btn-line-height;
+	font-family:$btn-font-family;
+	background:$btn-bg;
+	color:$btn-color;
+	border-radius:2px;
+	text-transform:uppercase;
+	display: inline-block;
+	&:hover,
+	&:active{
+		background: $btn-hover-bg;
+		color:$btn-hover-color;
+	}
+}
+@mixin buttons-inverse{
+	@include buttons(12px, 49px);
+		background:$brand-color;
+		color:$brand-color-secondary;
+		border-radius:40px;
+		&:hover,
+		&:active{
+			background: lighten($brand-color, 10%);
+			color:$brand-color-secondary;
+		}
+}

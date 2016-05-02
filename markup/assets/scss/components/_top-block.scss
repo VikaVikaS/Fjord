@@ -1,0 +1,31 @@
+.top-block{
+	height:792px;
+	position: relative;
+	background: $gray-base;
+	@media only screen and (max-width: 1023px){
+		height:500px;
+	}
+	&-content{
+		position: absolute;
+		top:30%;
+		left:15%;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: $text-color;
+		& h1{
+			text-transform: uppercase;
+			font-family: 'montserrathairline';
+			font-size: 72px;
+			line-height: 80px;
+			font-weight: normal;
+			letter-spacing: 5px;
+			margin:0 0 30px;
+			@media only screen and (max-width: 1023px){
+				font-size: 50px;
+				line-height: 60px;
+			}
+		}
+	}
+}

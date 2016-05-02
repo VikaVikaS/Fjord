@@ -1,0 +1,90 @@
+.header{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	padding:47px 0 20px;
+	@media only screen and (max-width: 1023px){
+		padding:20px 0 10px;
+	}
+	&:after{
+		content: "";
+		width: 100%;
+		clear: both;
+		display: table;
+	}
+	& .logo{
+		float: left;
+	}
+	& #nav{
+		float: right;
+		text-align: right;
+	}
+}
+#nav{
+	& ul{
+		list-style:none;
+		font-size: 12px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color:$text-base-color;
+		& li{
+			display: inline;
+			padding:0 16px;
+			& a{
+				color:$text-base-color;
+				&:hover,
+				&:active,
+				&.active{
+					color:$text-color;
+					@media only screen and (max-width: 1023px){
+						color:#fff;
+					}
+				}
+				&.btn-dark:hover{
+					color:$btn-hover-color;
+				}
+			}
+		}
+	}
+}
+#nav ul li.drop-list{
+	position: relative;
+	& a{
+		& i{
+			font-size: 10px;
+		}
+	}
+	& ul{
+		background: $brand-color-secondary;
+		color:rgba(255,255,255,0.5);
+		& li{
+			display: block;
+			padding:14px 5px 14px 30px;
+			& a{
+				color:rgba(255,255,255,0.5);
+				&:hover{
+					color:#fff;
+				}
+			}
+		}
+	}
+}
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 26px;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 182px;
+    text-align:left;
+}
+.dropit .dropit-open .dropit-submenu { display: block; }
+#nav ul li.dropit-open a{
+	color:$text-color;
+	@media only screen and (max-width: 1023px){
+		color:#fff;
+	}
+}

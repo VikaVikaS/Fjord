@@ -1,0 +1,6 @@
+.btn-dark{
+	@include buttons(10px, 19px);
+}
+.btn-light{
+	@include buttons-inverse;
+}

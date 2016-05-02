@@ -1,0 +1,71 @@
+.price-plans{
+	background: $gray-base;
+	padding:75px 0 150px;
+	@media only screen and (max-width: 767px){
+		padding:30px 0 40px;
+	}
+	&-list{
+		list-style: none;
+		text-align: center;
+		position: relative;
+		& li{
+			display: inline-block;
+			vertical-align: top;
+			width: 31.67%;
+			padding:40px 40px 120px;
+			@media only screen and (max-width: 767px){
+				width: 100%;
+				padding:20px 15px 15px;
+				margin:0 0 30px;
+			}
+			& p{
+				@media only screen and (max-width: 767px){
+					margin:0 0 20px;
+				}
+			}
+			& .plan-name{
+				display: block;
+				font-size: 12px;
+				line-height: 16px;
+				text-transform: uppercase;
+				color:$brand-color-secondary;
+				margin:0 0 45px;
+				@media only screen and (max-width: 767px){
+					margin:0 0 20px;
+				}
+			}
+			& .price{
+				display: block;
+				font-size: 50px;
+				line-height: 120px;
+				font-family: 'montserratblack';
+				text-transform: uppercase;
+				color:$brand-color-secondary;
+				margin:0 0 38px;
+				@media only screen and (max-width: 767px){
+					margin:0 0 20px;
+				}
+			}
+		}
+		& .btn{
+			position: absolute;
+			bottom:34px;
+			width: 22%;
+			text-transform: uppercase;
+			@media only screen and (max-width: 767px){
+				position: static;
+				width: 100%;
+			}
+		}
+	}
+}
+li.dark-box{
+	background: $brand-color-secondary;
+	color:#fff;
+	& .plan-name{
+		color:#fff;
+	}
+	& .price{
+		color:#fff;
+	}
+}
