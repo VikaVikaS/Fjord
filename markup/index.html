@@ -91,7 +91,9 @@
 			<section class="testing-block">
 				<div class="testing-block-inner">
 					<div class="presentation-block">
-						<img src="assets/images/device.png" alt="device" class="carousel-holder">
+						<div class="carousel-holder">
+							<img src="assets/images/device.png" alt="device">
+						</div>
 						<div class="slides">
 							<div class="owl-carousel">
 								<div class="item"> 
@@ -284,35 +286,37 @@
 				</div>
 			</section>
 			<section class="quotes">
-				<div class="quotes-item">
-					<blockquote>
-						<p>
-							It was some time before he obtained any answer, and the reply, when made, was unpropitious.	
-						</p>
-						<cite>
-							Sir Walter Scott
-						</cite>
-					</blockquote>
-				</div>
-				<div class="quotes-item">
-					<blockquote>
-						<p>
-							It was some time before he obtained any answer, and the reply, when made, was unpropitious.	
-						</p>
-						<cite>
-							Sir Walter Scott
-						</cite>
-					</blockquote>
-				</div>
-				<div class="quotes-item">
-					<blockquote>
-						<p>
-							It was some time before he obtained any answer, and the reply, when made, was unpropitious.	
-						</p>
-						<cite>
-							Sir Walter Scott
-						</cite>
-					</blockquote>
+				<div class="owl-carousel">
+					<div class="quotes-item">
+						<blockquote>
+							<p>
+								It was some time before he obtained any answer, and the reply, when made, was unpropitious.	
+							</p>
+							<cite>
+								Sir Walter Scott
+							</cite>
+						</blockquote>
+					</div>
+					<div class="quotes-item">
+						<blockquote>
+							<p>
+								It was some time before he obtained any answer, and the reply, when made, was unpropitious.	
+							</p>
+							<cite>
+								Sir Walter Scott
+							</cite>
+						</blockquote>
+					</div>
+					<div class="quotes-item">
+						<blockquote>
+							<p>
+								It was some time before he obtained any answer, and the reply, when made, was unpropitious.	
+							</p>
+							<cite>
+								Sir Walter Scott
+							</cite>
+						</blockquote>
+					</div>
 				</div>
 			</section>
 			<section class="demos-section">
@@ -446,20 +450,41 @@
     $('.dropdown-list').dropit();
 });
 	</script>
-	<!--<script type="text/javascript">
-		$('.quotes .owl-carousel').owlCarousel({
-		    touchDrag:true,
-		    loop:true,
-		    items:1
-		})
-	</script>-->
 	<script type="text/javascript">
-		$('.owl-carousel').owlCarousel({
+		$('.testing-block .owl-carousel, .ipad-block .owl-carousel').owlCarousel({
 		    loop:true,
 		    touchDrag:true,
 		    items:1	
 		})
 	</script>
-
+	<script type="text/javascript">
+		$('.quotes .owl-carousel').owlCarousel({
+		    touchDrag:true,
+		  	startPosition:1,
+		    autoWidth:true,
+		    margin:200,
+		    items:1,
+		    center:true,
+		    responsive:{
+		        0:{
+		            
+		            autoplay:true,
+		            startPosition:0
+		        },
+		        1024:{
+		        	margin:50
+		        },
+		        1440:{
+		        	margin:100
+		        },
+		        1800:{
+		            margin:200
+		        },
+		        2560:{
+		           margin:350
+		        }
+    		}
+		})
+	</script>
 </body>
 </html>
